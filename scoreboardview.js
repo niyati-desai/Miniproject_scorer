@@ -9,15 +9,14 @@ export default class scoreboardview {
 <div class="scoreboard__score" data-for-player="two">0</div>
 
 <div class="scoreboard__controls" data-for-player="one">
- <button class="scoreboard__control-button>-</button>
- <button class="scoreboard__control-button>+</button>
+ <button class="scoreboard__control-button">-</button>
+ <button class="scoreboard__control-button">+</button>
 </div>
 
 <div class="scoreboard__controls" data-for-player="two0">
- <button class="scoreboard__control-button>-</button>
- <button class="scoreboard__control-button>+</button>
+ <button class="scoreboard__control-button">-</button>
+ <button class="scoreboard__control-button">+</button>
 </div>
-
 </div>
 		`;
 

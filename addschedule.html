@@ -37,54 +37,9 @@
         <div class="nave_logo">
           <h2>S.A GROUP</h2>
         </div>
-        <div class="search_box">
-          <input
-            type="search"
-            name=""
-            id="search_input_admin"
-            placeholder="Search here..."
-          />
-        </div>
-
-<!-- PROFILE -->
-        <div class="profile_section">
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div id="profile_photo"></div>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa fa-user" aria-hidden="true"></i> My Profile</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa fa-lock" aria-hidden="true"></i> Lock screen</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+       </nav>
     </div>       
-
-        
-
-
-
-    <!-- SIDEBAR  -->
+<!-- SIDEBAR  -->
     <div class="sidebar">
       
       <a class="" href="../adminhome.html"
@@ -97,10 +52,10 @@
       </a>
       <div class="dropdown-container">
         <a href="cricket.html">Cricket</a>
-        <a href="#">Football</a>
+        <a href="football.html">Football</a>
         
       </div>
-      <a href="#addSchedule" class="st1"
+      <a href="addSchedule.html" class="st1"
         ><i class="fa fa-plus-circle" aria-hidden="true"></i> Add Schedule</a
       >
      
@@ -122,13 +77,6 @@
             <p>Time:</p>
             <input type="time" name="" id="" />
           </div>
-          <div class="header_input_style">
-            <p>Type:</p>
-            <select name="" id="">
-              <option value="">T20</option>
-              <option value="odi">ODI</option>
-            </select>
-          </div>
         </form>
       </div>
       <!-- add team member -->
@@ -145,38 +93,6 @@
                 placeholder="Enter Team name.."
               />
             </div>
-            <div class="for_logo_upload">
-              <p>Team Logo:</p>
-              <div id="profile_photo_for_logo1">
-                <p id="upload_icon">upload</p>
-                <input
-                  type="file"
-                  accept="image/*"
-                  name="photo"
-                  id="file_name1"
-                  onchange="upload_pic1()"
-                />
-              </div>
-            </div>
-            <div>
-              <p>Captain Name:</p>
-              <input
-                type="text"
-                name=""
-                id="team_captain"
-                placeholder="Enter captain name.."
-              />
-            </div>
-            <div style="margin-top: 9px">
-              <p>Other Players name:</p>
-              <textarea
-                name=""
-                id="other_player"
-                cols="31"
-                rows="5"
-                placeholder="Other players..."
-              ></textarea>
-            </div>
           </form>
         </div>
         <!-- second team -->
@@ -190,38 +106,6 @@
                 id="team_name"
                 placeholder="Enter Team name.."
               />
-            </div>
-            <div class="for_logo_upload">
-              <p>Team Logo:</p>
-              <div id="profile_photo_for_logo2">
-                <p id="upload_icon">upload</p>
-                <input
-                  type="file"
-                  accept="image/*"
-                  name="photo"
-                  id="file_name2"
-                  onchange="upload_pic2()"
-                />
-              </div>
-            </div>
-            <div>
-              <p>Captain Name:</p>
-              <input
-                type="text"
-                name=""
-                id="team_captain"
-                placeholder="Enter captain name.."
-              />
-            </div>
-            <div style="margin-top: 9px">
-              <p>Other Players name:</p>
-              <textarea
-                name=""
-                id="other_player"
-                cols="31"
-                rows="5"
-                placeholder="Other players..."
-              ></textarea>
             </div>
           </form>
         </div>

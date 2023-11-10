@@ -18,22 +18,6 @@ nav {
   height: 100%;
   display: flex;
 }
-.nave_logo {
-  width: 55vw;
-}
-.search_box {
-  width: 300px;
-}
-.notification_section {
-  width: 200px;
-
-  display: flex;
-  justify-content: space-around;
-}
-.profile_section {
-  width: 200px;
-  padding-left: 40px;
-}
 .nave_logo h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #e0e3e4;

@@ -215,3 +215,27 @@ body {
   height: 0%;
   opacity: 0;
 }
+/****VIEWER BUTTON**/
+.btn_sec {
+  width: 100px;
+  margin-top: 10px;
+position: absolute;
+bottom: 60px;
+left: 47%;
+ background-color: #f7f0f0;
+}
+#btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: none;
+  font: 1.2rem Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color:#98edad;
+ box-shadow: 0 0 10px 1px #090a0a;
+}
+#btn:hover {
+  background: rgba(0, 241, 12, 0.493);
+}

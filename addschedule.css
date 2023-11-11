@@ -12,27 +12,10 @@
   height: 8vh;
   background-image: linear-gradient(30deg, #0186c4, #01bbde);
 }
-
 nav {
   width: 100%;
   height: 100%;
   display: flex;
-}
-.nave_logo {
-  width: 55vw;
-}
-.search_box {
-  width: 300px;
-}
-.notification_section {
-  width: 200px;
-
-  display: flex;
-  justify-content: space-around;
-}
-.profile_section {
-  width: 200px;
-  padding-left: 40px;
 }
 .nave_logo h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -40,68 +23,12 @@ nav {
   margin-top: 9px;
   margin-left: 10px;
 }
-
-#search_input_admin {
-  width: 250px;
-  height: 40px;
-  border-radius: 20px;
-  border: 2px solid gray;
-  margin-top: 7px;
-  margin-left: 40px;
-  padding: 15px;
-  border: none;
-}
 #search_input_admin:focus {
   outline: none;
 }
-/*****notification_section****/
-.notification_section .admin_tasks,
-.admin_mailbox,
-.admin_notification {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px rgb(3, 89, 116);
-  margin-top: 8px;
-  background-color: #ffffff;
-}
-.notification_section .admin_tasks,
-.admin_mailbox,
-.admin_notification:hover {
-  cursor: pointer;
-}
-.fa-tasks,
-.fa-envelope,
-.fa-bell {
-  margin-top: 12px;
-  margin-left: 12px;
-}
-.notification_section .count_alert {
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
-  background-color: red;
-  color: #ffffff;
-  position: relative;
-  left: 25px;
-  top: -30px;
-  font-size: 12px;
-  text-align: center;
-}
-/***profile***/
-#dropdownMenuButton1:focus {
-  outline: none;
-}
-.profile_section #profile_photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
-
 /*************************
 **********SIDEBAR**********
 **************************/
-
 .sidebar {
   margin: 0;
   padding: 0;
@@ -118,27 +45,8 @@ nav {
   width: 100%;
   height: 150px;
 }
-#profile_photo_forsidebar,
-#profile_photo_for_logo1,
-#profile_photo_for_logo2 {
-  width: 90px;
-  height: 90px;
-  position: relative;
-  border-radius: 45px;
-  background-color: rgb(154, 159, 161);
-  float: left;
-  margin-left: 55px;
-  margin-top: 30px;
-}
 #my_side_pic h6 {
   margin-left: 55px;
-}
-#profile_photo_forsidebar p,
-#profile_photo_for_logo1 p,
-#profile_photo_for_logo2 p {
-  text-align: center;
-  padding-top: 45%;
-  font-size: 1.5rem;
 }
 input[type="file"] {
   position: absolute;
@@ -151,7 +59,6 @@ input[type="file"] {
 input[type="file"]:hover{
   cursor: pointer;
 }
-
 .sidebar a {
   display: block;
   color: rgba(48, 46, 46, 0.842);
@@ -162,23 +69,19 @@ input[type="file"]:hover{
   font-family: sans-serif;
   font-weight: 500;
 }
-
 .sidebar a.active {
   background-color: #0194dd;
   color: #f8f9fa;
   font-weight: 500;
 }
-
 .sidebar a:hover:not(.active) {
   background-color: #0536bbe0;
   color: #ffffff;
 }
-
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
 }
-
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -192,7 +95,6 @@ div.content {
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
@@ -219,7 +121,6 @@ div.content {
 *****CCONTENT****/
 .content {
   background-color: #e6f4f5;
-  background-image: url(../../../../images/addSchedule/cricket.jpg);
   background-size: cover;
   height: 91vh;
   display: flex;
@@ -240,14 +141,13 @@ div.content {
   flex-direction: column;
   align-items: center;
 }
-
 .add_score {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .first_team_add_score {
-  width: 400px;
+  width: 300px;
   height: 500px;
   box-shadow: 4px 4px 8px gray;
   background: rgba(86, 86, 86, 0.3);
@@ -265,12 +165,6 @@ div.content {
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 15px;
-}
-.cricket_ti {
-  width: 70%;
-  color: #6a00b1;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 /****add schedule header for set date and time****/
 .schedule_header_date_sec {
@@ -300,10 +194,10 @@ div.content {
   height: 30px;
   margin-top: 20px;
 }
-
 /***add team name**/
 .add_team_member_section {
   width: 80%;
+  height: 275px;
   box-shadow: 4px 4px 8px gray;
   background: rgba(86, 86, 86, 0.3);
   backdrop-filter: blur(10px);
@@ -313,7 +207,7 @@ div.content {
 .add_first_team,
 .add_second_team {
   width: 50%;
-  height: 400px;
+  height: 275px;
 }
 .add_first_team {
   border-right: 2px solid rgba(77, 76, 76, 0.377);
@@ -334,26 +228,12 @@ div.content {
   font-weight: 500;
   color: rgba(26, 25, 25, 0.979);
 }
-.for_logo_upload {
-  display: flex;
-  align-items: center;
-  height: 90px;
-}
-#team_name,
-#team_captain {
+#team_name {
   width: 250px;
   border: none;
   padding-left: 12px;
 }
-#other_player {
-  border: none;
-  padding-left: 12px;
-}
-#team_name:focus,
-#team_captain:focus {
-  outline: none;
-}
-#other_player:focus {
+#team_name:focus{
   outline: none;
 }
 /****ADD TEAM BUTTON**/

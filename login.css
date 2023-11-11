@@ -112,11 +112,12 @@ body {
 .container .container-form {
   overflow: hidden;
   position: absolute;
+  border-radius: 30px;
   left: 30px;
   top: -30px;
   width: 305px;
   height: 380px;
-  background-color: #f7f0f0;
+  background-color: #c7e1c0;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;

@@ -19,3 +19,39 @@ document.querySelectorAll(".container-form .btn").forEach(function(button) {
     });
   });
 });
+
+// Add a click event listener to the login button
+document.querySelector(".form-item.log-in .btn").addEventListener("click", function() {
+  // Get values from the input fields
+  const username = document.querySelector("#username").value;
+  const password = document.querySelector("#password").value;
+
+  // Send the login data to the server for verification
+  fetch("/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, password }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success) {
+        // Authentication successful, handle 2FA if required
+        if (data.requires2FA) {
+          // Implement 2FA logic here
+          // You might want to show a 2FA input form to the user
+          // and send the 2FA code to the server for verification
+        } else {
+          // Redirect to the user's dashboard or another page
+          window.location.href = "/dashboard";
+        }
+      } else {
+        // Authentication failed, display an error message
+        alert("Login failed. Please check your credentials.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+});
